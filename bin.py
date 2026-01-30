@@ -2,8 +2,8 @@ l=[2,4,9,3,1]
 print(l)
 l.sort()
 
-print("element to be searched is 1")
-e=1
+print("element to be searched is 2")
+e=2
 c=0
 a=0
 b=len(l)-1
