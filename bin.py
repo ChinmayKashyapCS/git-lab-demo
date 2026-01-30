@@ -1,5 +1,8 @@
 l=[2,4,9,3,1]
+print(l)
 l.sort()
+
+print("element to be searched is 1")
 e=1
 c=0
 a=0
