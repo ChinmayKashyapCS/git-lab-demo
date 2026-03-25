@@ -1,2 +1,2 @@
 print("Hello")
-print(4140 + "Namaste")   # ❌ This will cause TypeError
+print(10 + "Namaste")   # ❌ This will cause TypeError
