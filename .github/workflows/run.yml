@@ -31,6 +31,6 @@ jobs:
         run: |
           ERROR=$(cat error.txt)
           echo "Sending ERROR: $ERROR"
-          curl -v -X POST https://hooks.zapier.com/hooks/catch/26934524/upv6b48/ \
+          curl -v -X POST https://hooks.zapier.com/hooks/catch/26934524/upvdiya/ \
           -H "Content-Type: application/json" \
           -d "{\"error\": \"$ERROR\"}"
