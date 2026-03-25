@@ -22,11 +22,13 @@ jobs:
         run: pip install requests
 
       - name: Run main.py and capture error
+        id: run_script
+        continue-on-error: true
         run: |
-          python main.py || echo "ERROR_OCCURED" > error.txt
+          python main.py 2> error.txt
 
       - name: Send error to Zapier
-        if: failure()
+        if: steps.run_script.outcome == 'failure'
         run: |
           ERROR=$(cat error.txt)
           curl -X POST https://hooks.zapier.com/hooks/catch/26934524/upv6b48/ \
