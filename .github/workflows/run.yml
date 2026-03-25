@@ -27,7 +27,7 @@ jobs:
         run: |
           python main.py 2> error.txt
 
-      - name: Send to Zapier
+      - name: Send to Zapier now
         run: |
           ERROR=$(cat error.txt)
           echo "Sending ERROR: $ERROR"
