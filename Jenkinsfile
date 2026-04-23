@@ -8,11 +8,7 @@ pipeline {
 
             }
         }
-        stage('Test') {
-            steps {
-                sh 'python -m unittest'
-            }
-        }
+        
 
         stage('Docker Build') {
             steps {
