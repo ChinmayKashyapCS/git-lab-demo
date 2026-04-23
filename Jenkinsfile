@@ -7,5 +7,6 @@ pipeline {
                     git "https://github.com/ChinmayKashyapCS/git-lab-demo.git"
 
             }
+        }
     }
 }
